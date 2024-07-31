@@ -1,0 +1,119 @@
+<svg
+              width="15"
+              height="20"
+              viewBox="0 0 15 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_63_566"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="4"
+                width="14"
+                height="13"
+              >
+                <path
+                  d="M7.54695 16.691L6.85592 16.691C6.74075 15.9835 6.42814 15.2102 5.90164 14.3711C4.84864 12.7094 2.72619 11.0805 0.899889 10.7021L0.899889 10.0111C1.80481 9.81362 2.69328 9.4023 3.54884 8.79353C5.29287 7.55955 6.57622 5.7168 6.85592 4.05503L7.54695 4.05503C7.71148 4.92705 8.08991 5.76616 8.68222 6.62172C9.85039 8.31639 11.6767 9.56683 13.5359 10.0111L13.5359 10.7021C12.5981 10.8995 11.6438 11.3602 10.706 12.0677C8.79739 13.4991 7.79375 15.2761 7.54695 16.691Z"
+                  fill="#CCFF00"
+                />
+              </mask>
+              <g mask="url(#mask0_63_566)">
+                <rect
+                  x="-50.9375"
+                  y="-11.5625"
+                  width="111.562"
+                  height="173.437"
+                  rx="7.5"
+                  fill="black"
+                />
+                <g filter="url(#filter0_f_63_566)">
+                  <ellipse
+                    cx="-0.794233"
+                    cy="-2.08604"
+                    rx="16.6129"
+                    ry="15.1535"
+                    transform="rotate(-124.782 -0.794233 -2.08604)"
+                    fill="#F7F7F7"
+                  />
+                </g>
+                <g filter="url(#filter1_f_63_566)">
+                  <path
+                    d="M-2.50481 15.7026C8.73735 23.3949 5.64394 36.5207 9.87357 38.6712C15.1905 41.3746 20.5014 30.5312 18.7535 24.1011C16.6931 16.5218 -10.1234 10.4896 -2.50481 15.7026Z"
+                    fill="#0E0F11"
+                  />
+                </g>
+                <g filter="url(#filter2_f_63_566)">
+                  <path
+                    d="M1.74418 32.063C4.12741 35.4943 7.07236 35.84 9.53289 34.1311C14.6671 30.5651 -4.54478 -0.991977 -12.0122 -2.60495C-17.5001 -3.79034 -21.6307 -0.280652 -20.7361 4.36532C-19.7252 9.6157 -20.2445 9.69297 -16.0989 12.6619C-12.6399 15.1392 -8.19185 17.5656 -4.69056 20.4959C-1.41338 23.2387 -0.372743 29.0151 1.74418 32.063Z"
+                    fill="#43474F"
+                  />
+                </g>
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_63_566"
+                  x="-27.8226"
+                  y="-29.6247"
+                  width="54.0567"
+                  height="55.0774"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="5.6921"
+                    result="effect1_foregroundBlur_63_566"
+                  />
+                </filter>
+                <filter
+                  id="filter1_f_63_566"
+                  x="-16.0066"
+                  y="1.60337"
+                  width="47.2426"
+                  height="49.6355"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="6.07158"
+                    result="effect1_foregroundBlur_63_566"
+                  />
+                </filter>
+                <filter
+                  id="filter2_f_63_566"
+                  x="-33.0014"
+                  y="-14.9803"
+                  width="55.5378"
+                  height="62.2561"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="6.07158"
+                    result="effect1_foregroundBlur_63_566"
+                  />
+                </filter>
+              </defs>
+            </svg>

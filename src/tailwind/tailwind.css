@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-checkbox-1:checked + div {
+    @apply bg-green-500;
+    @apply border-green-500;
+}
+
+.custom-checkbox-1:checked + div svg {
+    @apply text-black opacity-100;
+    @apply block;
+}
+
+.custom-checkbox-2:checked + div {
+    @apply bg-green-500;
+    @apply border-green-500;
+}
+
+.custom-checkbox-2:checked + div svg {
+    @apply text-black opacity-100;
+    @apply block;
+}
+
+.custom-switch-1:checked + div {
+    @apply left-1/2;
+    @apply bg-black;
+}
+
+.custom-switch-2:checked + div > .w-full > .custom-switch-btn-1 {
+    @apply bg-transparent;
+    @apply text-gray-50;
+}
+
+.custom-switch-2:checked + div > .flex-1 > .custom-switch-btn-2 {
+    @apply bg-white;
+}
+
+.custom-switch-2:checked + div > .flex-1 > .custom-switch-btn-2 > p {
+    @apply text-black;
+}
+
+.custom-switch-2:checked + div > .flex-1 > .custom-switch-btn-2 > span {
+    @apply bg-green-500;
+    @apply text-black;
+}
+
+.custom-input-text-1:focus ~ label, .custom-input-text-1:valid ~ label {
+    @apply top-2;
+    @apply left-2.5;
+    transform: scale(0.75);
+}
+
+.custom-input-text-2:focus + svg {
+    @apply text-white;
+}
+
+.custom-input-password-1:focus ~ label, .custom-input-password-1:valid ~ label {
+    @apply top-2;
+    @apply left-3.5;
+    transform: scale(0.75);
+}
+
+.custom-input-text-3:focus ~ label, .custom-input-text-3:valid ~ label {
+    @apply top-2;
+    left: 17px;
+    transform: scale(0.75);
+}
+
+.custom-input-text-4:focus ~ label, .custom-input-text-4:valid ~ label {
+    @apply top-3;
+    left: 17px;
+    transform: scale(0.75);
+}

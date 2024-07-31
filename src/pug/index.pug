@@ -1,0 +1,641 @@
+html(lang="en")
+    head
+        title Visit www.pixelrocket.store to learn how to become a frontend web developer
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap", rel="stylesheet")
+        link(href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,300,500&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="favicon.png")
+        script(src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js", defer="defer")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            p(class="py-4 bg-green-500 text-green-900 text-center")
+                | Want to learn how to build websites like this one? 
+                a(href="https://www.pixelrocket.store") Visit Pixel Rocket
+            section(x-data="{ mobileNavOpen: false }", class="relative overflow-hidden")
+                div(class="container px-4 mx-auto")
+                    div(class="flex items-center justify-between pt-6 -m-2")
+                        div(class="w-auto p-2")
+                            div(class="flex flex-wrap items-center")
+                                div(class="w-auto")
+                                    a(class="relative z-10 inline-block", href="index.html")
+                                        img(src="images/logo.svg", alt="", class="")
+                        div(class="w-auto p-2")
+                            div(class="flex flex-wrap items-center")
+                                div(class="w-auto hidden lg:block")
+                                    ul(class="flex items-center mr-12")
+                                        li(class="mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                            a(href="about.html") About
+                                        li(class="mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                            a(href="pricing.html") Pricing
+                                        li(class="mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                            a(href="blog.html") Blog
+                                        li(class="text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                            a(href="contact.html") Contact
+                                div(class="w-auto hidden lg:block")
+                                    div(class="inline-block")
+                                        a(class="inline-block px-8 py-4 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300", href="login.html") Login
+                                div(class="w-auto lg:hidden")
+                                    button(x-on:click="mobileNavOpen = !mobileNavOpen", class="relative z-10 inline-block")
+                                        svg(class="text-green-500", width="51", height="51", viewbox="0 0 56 56", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            rect(width="56", height="56", rx="28", fill="currentColor")
+                                            path(d="M37 32H19M37 24H19", stroke="black", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                div(:class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}", class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50")
+                    div(x-on:click="mobileNavOpen = !mobileNavOpen", class="fixed inset-0 bg-black opacity-60")
+                    nav(class="relative z-10 px-9 pt-8 h-full bg-black overflow-y-auto")
+                        div(class="flex flex-wrap justify-between h-full")
+                            div(class="w-full")
+                                div(class="flex items-center justify-between -m-2")
+                                    div(class="w-auto p-2")
+                                        a(class="inline-block", href="#")
+                                            img(src="images/logo.svg", alt="")
+                                    div(class="w-auto p-2")
+                                        button(x-on:click="mobileNavOpen = !mobileNavOpen", class="inline-block text-white")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M6 18L18 6M6 6L18 18", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            div(class="flex flex-col justify-center py-16 w-full")
+                                ul
+                                    li(class="mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                        a(href="about.html") About
+                                    li(class="mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                        a(href="pricing.html") Pricing
+                                    li(class="mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                        a(href="blog.html") Blog
+                                    li(class="text-white font-medium hover:text-opacity-90 tracking-tighter")
+                                        a(href="contact.html") Contact
+                            div(class="flex flex-col justify-end w-full pb-8")
+                                a(class="inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300", href="login.html") Login
+                div(class="relative pt-20 lg:pt-28")
+                    div(class="relative z-10 container px-4 mx-auto")
+                        div(class="relative mb-24 text-center md:max-w-4xl mx-auto")
+                            img(class="absolute top-44 -left-36", src="template-assets/images/headers/star2.svg", alt="")
+                            img(class="absolute top-10 -right-36", src="template-assets/images/headers/star2.svg", alt="")
+                            span(class="inline-block mb-2.5 text-sm text-green-400 font-medium tracking-tighter") Savings Card
+                            h1(class="font-heading mb-10 text-7xl lg:text-8xl xl:text-10xl text-white tracking-tighter") Making credit history with our card
+                            a(class="inline-block px-8 py-4 tracking-tighter bg-green-400 hover:bg-green-500 text-black focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300", href="#") Start now
+                        div(class="relative max-w-max mx-auto")
+                            img(src="template-assets/images/headers/card-half.png", alt="")
+                            img(class="absolute top-7 -right-64", src="template-assets/images/headers/star.svg", alt="")
+                img(class="absolute top-0 left-48", src="template-assets/images/headers/layer-blur.svg", alt="")
+                img(class="absolute bottom-0 right-0", src="template-assets/images/headers/lines2.svg", alt="")
+            section(class="pt-20 pb-24 bg-blueGray-950")
+                div(class="container px-4 mx-auto")
+                    div(class="text-center")
+                        span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Why us
+                        h2(class="font-heading mb-6 text-7xl lg:text-8xl text-white tracking-8xl md:max-w-md mx-auto") Protecting you and your money
+                        p(class="mb-20 text-gray-300 md:max-w-md mx-auto") Global Bank is a strategic branding agency focused on brand creation, rebrands, and brand
+                    div(class="flex flex-wrap -m-4")
+                        div(class="w-full md:w-1/2 lg:w-1/3 p-4")
+                            div(class="relative mb-8 overflow-hidden rounded-5xl")
+                                img(class="w-full transform hover:scale-125 transition duration-1000", src="template-assets/images/cards/bg-image1.png", alt="")
+                                div(class="absolute bottom-0 left-0 w-full bg-gradient-card p-8")
+                                    span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Features
+                                    |                   
+                                    a(class="group inline-block max-w-sm", href="#")
+                                        h3(class="mb-4 text-3xl text-white tracking-3xl hover:underline") Safeguarded with leading banks
+                                    |                   
+                                    a(class="group inline-flex items-center", href="#")
+                                        span(class="mr-3.5 text-white font-medium") Learn more
+                                        svg(class="transform group-hover:rotate-90 transition duration-300", width="13", height="12", viewbox="0 0 13 12", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M11.5 0.75L1 11.25", stroke="white", stroke-width="1.43182", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M11.5 10.3781V0.75H1.87187", stroke="white", stroke-width="1.43182", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                        div(class="w-full md:w-1/2 lg:w-1/3 p-4")
+                            div(class="relative mb-8 overflow-hidden rounded-5xl")
+                                img(class="w-full transform hover:scale-125 transition duration-1000", src="template-assets/images/cards/bg-image2.png", alt="")
+                                div(class="absolute bottom-0 left-0 w-full bg-gradient-card p-8")
+                                    span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Security
+                                    |                   
+                                    a(class="group inline-block max-w-sm", href="#")
+                                        h3(class="mb-4 text-3xl text-white tracking-3xl hover:underline") Safeguarded with leading banks
+                                    |                   
+                                    a(class="group inline-flex items-center", href="#")
+                                        span(class="mr-3.5 text-white font-medium") Learn more
+                                        svg(class="transform group-hover:rotate-90 transition duration-300", width="13", height="12", viewbox="0 0 13 12", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M11.5 0.75L1 11.25", stroke="white", stroke-width="1.43182", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M11.5 10.3781V0.75H1.87187", stroke="white", stroke-width="1.43182", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                        div(class="w-full md:w-1/2 lg:w-1/3 p-4")
+                            div(class="relative mb-8 overflow-hidden rounded-5xl")
+                                img(class="w-full transform hover:scale-125 transition duration-1000", src="template-assets/images/cards/bg-image3.png", alt="")
+                                div(class="absolute bottom-0 left-0 w-full bg-gradient-card p-8")
+                                    span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Progress
+                                    |                   
+                                    a(class="group inline-block max-w-sm", href="#")
+                                        h3(class="mb-4 text-3xl text-white tracking-3xl hover:underline") Safeguarded with leading banks
+                                    |                   
+                                    a(class="group inline-flex items-center", href="#")
+                                        span(class="mr-3.5 text-white font-medium") Learn more
+                                        svg(class="transform group-hover:rotate-90 transition duration-300", width="13", height="12", viewbox="0 0 13 12", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M11.5 0.75L1 11.25", stroke="white", stroke-width="1.43182", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M11.5 10.3781V0.75H1.87187", stroke="white", stroke-width="1.43182", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+            section(class="relative py-24 overflow-hidden")
+                div(class="container px-4 mx-auto")
+                    div(class="mb-20 md:max-w-xl text-center mx-auto")
+                        span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Core Card
+                        h2(class="font-heading text-7xl lg:text-8xl text-white tracking-tighter-xl") Features
+                    div(class="relative mb-10 py-20 px-16 bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl")
+                        div(class="max-w-6xl mx-auto")
+                            div(class="relative z-10 flex flex-wrap items-center -m-8")
+                                div(class="w-full md:w-1/2 p-8")
+                                    div(class="max-w-md mx-auto text-center")
+                                        h2(class="mb-6 text-7xl text-white tracking-tighter-xl") Making credit history
+                                        p(class="text-white text-opacity-60") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum i
+                                div(class="w-full md:w-1/2 p-8")
+                                    img(class="mx-auto md:mr-0", src="template-assets/images/features/dashboard.png", alt="")
+                        img(class="absolute bottom-0 left-0", src="template-assets/images/features/bg-gray.png", alt="")
+                    div(class="flex flex-wrap -m-5")
+                        div(class="w-full md:w-1/2 p-5")
+                            div(class="relative px-16 pt-14 pb-16 h-full bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl")
+                                img(class="mb-14", src="template-assets/images/features/cards.png", alt="")
+                                div(class="relative z-10 max-w-sm text-center mx-auto")
+                                    h2(class="mb-6 text-7xl text-white tracking-tighter") Making credit history
+                                    p(class="text-white text-opacity-60") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum i
+                                img(class="absolute bottom-0 right-0", src="template-assets/images/features/bg-gray-2.png", alt="")
+                        div(class="w-full md:w-1/2 p-5")
+                            div(class="relative px-16 pt-14 pb-16 h-full bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl")
+                                div(class="mb-14 max-w-sm mx-auto")
+                                    div(class="flex flex-wrap justify-center")
+                                        div(class="w-auto p-2")
+                                            div(class="flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl")
+                                                img(src="template-assets/logos/brands/figma.svg", alt="")
+                                        div(class="w-auto p-2")
+                                            div(class="flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl")
+                                                img(src="template-assets/logos/brands/notion.svg", alt="")
+                                        div(class="w-auto p-2")
+                                            div(class="flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl")
+                                                img(src="template-assets/logos/brands/slack.svg", alt="")
+                                        div(class="w-auto p-2")
+                                            div(class="flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl")
+                                                img(src="template-assets/logos/brands/spotify.svg", alt="")
+                                        div(class="w-auto p-2")
+                                            div(class="flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl")
+                                                img(src="template-assets/logos/brands/twitter.svg", alt="")
+                                        div(class="w-auto p-2")
+                                            div(class="flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl")
+                                                img(src="template-assets/logos/brands/desktop.svg", alt="")
+                                div(class="relative z-10 max-w-sm text-center mx-auto")
+                                    h2(class="mb-6 text-7xl text-white tracking-tighter") Making credit history
+                                    p(class="text-white text-opacity-60") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum i
+                                img(class="absolute bottom-0 right-0", src="template-assets/images/features/bg-gray-2.png", alt="")
+            section(class="relative py-24 overflow-hidden")
+                div(class="container px-4 mx-auto")
+                    div(class="flex flex-wrap items-center -m-8")
+                        div(class="w-full md:w-1/2 p-8")
+                            div(class="relative z-10 md:max-w-md")
+                                span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Secure Access
+                                h2(class="font-heading mb-6 text-6xl md:text-7xl text-white tracking-tighter-xl") Making credit history
+                                p(class="mb-8 text-white text-opacity-60") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum i
+                                ul
+                                    li(class="inline-flex mb-3.5")
+                                        img(class="mr-3.5", src="template-assets/images/features/checked.svg", alt="")
+                                        span(class="text-white") Real-time usager, credits and running balance
+                                    li(class="inline-flex mb-3.5")
+                                        img(class="mr-3.5", src="template-assets/images/features/checked.svg", alt="")
+                                        span(class="text-white") Webhooks to power altering use cases for customers
+                                    li(class="inline-flex")
+                                        img(class="mr-3.5", src="template-assets/images/features/checked.svg", alt="")
+                                        span(class="text-white") Cost grouping functionality to organize invoices
+                        div(class="w-full md:w-1/2 p-8")
+                            img(class="mx-auto", src="template-assets/images/features/card2.png", alt="")
+                img(class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2", src="template-assets/images/features/bg-blur.png", alt="")
+            section(x-data="{ showContent: false }", class="relative py-24 overflow-hidden")
+                div(class="container px-4 mx-auto")
+                    div(class="text-center")
+                        span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") 24/7 Security
+                        h2(class="font-heading mb-6 text-7xl lg:text-8xl text-white tracking-8xl md:max-w-md mx-auto") Protecting you and your money
+                        p(class="mb-20 text-gray-300 md:max-w-md mx-auto") Global Bank is a strategic branding agency focused on brand creation, rebrands, and brand
+                    div(class="flex flex-wrap -m-3")
+                        div(class="w-full md:w-1/2 lg:w-1/4 p-3")
+                            div(class="flex flex-wrap -m-3")
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar2.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Leslie Alexander
+                                                p(class="text-sm text-gray-300") @lesliealexnader
+                                        p(class="mb-4 text-white") Finances are very important to me. I regularly plan my expensesand save for the future.
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar3.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Kristin Watson
+                                                p(class="text-sm text-gray-300") @kristinawatson
+                                        p(class="mb-4 text-white") Finances are very important to me. I regularly plan my expensesand save for the future.
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar4.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Marvin McKinney
+                                                p(class="text-sm text-gray-300") @marvinmckinney
+                                        p(class="mb-4 text-white") Finances are a part of life that needs constant attention. I try to regularly analyze my expenses
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(:class="{ 'hidden': !showContent }", class="hidden")
+                                    div(class="w-full p-3")
+                                        div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                            div(class="flex flex-wrap items-center -m-3 mb-3")
+                                                div(class="w-auto p-3")
+                                                    img(src="template-assets/images/cards/avatar3.png", alt="")
+                                                div(class="w-auto p-3")
+                                                    h2(class="text-2xl text-white") Rob Mason
+                                                    p(class="text-sm text-gray-300") @robmason
+                                            p(class="mb-4 text-white") Prioritizing finances is a constant for me. I regularly budget and save, emphasizing the importance of planning for the future.
+                                            div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") 5:48 PM
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") Sep 15, 2023
+                                            div(class="flex flex-wrap items-center -m-2.5")
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                        path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 232 like
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                        path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 81 com.
+                        div(class="w-full md:w-1/2 lg:w-1/4 p-3")
+                            div(class="flex flex-wrap -m-3")
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar5.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Kathryn Murphy
+                                                p(class="text-sm text-gray-300") @kathrynmurphy
+                                        p(class="mb-4 text-white") Finances are one of the most important things in life. I have to be careful not to spend too much and have enough money for everything
+                                        p(class="mb-4 text-white") I'm not very knowledgeable about finances, but I try to stay on top of my expenses and take advice from experts."
+                                        p(class="mb-4 text-white") I don't like thinking about finances, but I know I have to take care of them. I try to take care of my savings and control my expenses.
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar6.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Brooklyn Simm..
+                                                p(class="text-sm text-gray-300") @brooklynsimmons
+                                        p(class="mb-4 text-white") Finances are a matter of responsibility and discipline for me. I try to monitor my expenses and savings on an ongoing basis to avoid financial problem
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(:class="{ 'hidden': !showContent }", class="hidden")
+                                    div(class="w-full p-3")
+                                        div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                            div(class="flex flex-wrap items-center -m-3 mb-3")
+                                                div(class="w-auto p-3")
+                                                    img(src="template-assets/images/cards/avatar2.png", alt="")
+                                                div(class="w-auto p-3")
+                                                    h2(class="text-2xl text-white") Lucas Floe
+                                                    p(class="text-sm text-gray-300") @lucasfloe
+                                            p(class="mb-4 text-white") I firmly believe that investing in education and acquiring new skills is pivotal for a secure financial future. It's a strategic move that aligns with my commitment to financial stability.
+                                            div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") 5:48 PM
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") Sep 15, 2023
+                                            div(class="flex flex-wrap items-center -m-2.5")
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                        path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 232 like
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                        path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 81 com.
+                        div(class="w-full md:w-1/2 lg:w-1/4 p-3")
+                            div(class="flex flex-wrap -m-3")
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar7.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Devon Lane
+                                                p(class="text-sm text-gray-300") @devonlane
+                                        p(class="mb-4 text-white") Finances are a part of life that needs constant attention. I try to regularly analyze my expenses
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar8.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Arlene McCoy
+                                                p(class="text-sm text-gray-300") @arlenemccoy
+                                        p(class="mb-4 text-white") Finances are a part of life that needs constant attention. I try to regularly analyze my expenses
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar9.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Bessie Cooper
+                                                p(class="text-sm text-gray-300") @bessiecooper
+                                        p(class="mb-4 text-white") I'm interested in new technologies in the field of finance, such as blockchain or robo-advisors. I believe these new tools can help manage money more efficiently.
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(:class="{ 'hidden': !showContent }", class="hidden")
+                                    div(class="w-full p-3")
+                                        div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                            div(class="flex flex-wrap items-center -m-3 mb-3")
+                                                div(class="w-auto p-3")
+                                                    img(src="template-assets/images/cards/avatar9.png", alt="")
+                                                div(class="w-auto p-3")
+                                                    h2(class="text-2xl text-white") Mike Rochs
+                                                    p(class="text-sm text-gray-300") @mikerochs
+                                            p(class="mb-4 text-white") Financial management can be a source of stress. Balancing budgets and making prudent decisions requires careful consideration, but it's a challenge I navigate diligently.
+                                            div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") 5:48 PM
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") Sep 15, 2023
+                                            div(class="flex flex-wrap items-center -m-2.5")
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                        path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 232 like
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                        path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 81 com.
+                        div(class="w-full md:w-1/2 lg:w-1/4 p-3")
+                            div(class="flex flex-wrap -m-3")
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar10.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Jerome Bell
+                                                p(class="text-sm text-gray-300") @jeromebell
+                                        p(class="mb-4 text-white") I'm convinced that investing in education and acquiring new skills is a key factor in building a stable financial future.
+                                        p(class="mb-4 text-white") Managing finances can be stressful.
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(class="w-full p-3")
+                                    div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                        div(class="flex flex-wrap items-center -m-3 mb-3")
+                                            div(class="w-auto p-3")
+                                                img(src="template-assets/images/cards/avatar11.png", alt="")
+                                            div(class="w-auto p-3")
+                                                h2(class="text-2xl text-white") Ronald Richards
+                                                p(class="text-sm text-gray-300") @ronaldrichards
+                                        p(class="mb-4 text-white") I'm convinced that investing in education and acquiring new skills is a key factor in building a stable financial future.
+                                        p(class="mb-4 text-white") Managing finances can be stressful.
+                                        div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") 5:48 PM
+                                            div(class="w-auto p-2.5")
+                                                p(class="text-sm text-gray-300") Sep 15, 2023
+                                        div(class="flex flex-wrap items-center -m-2.5")
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                    path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 232 like
+                                            div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                    path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                p(class="text-sm text-gray-300") 81 com.
+                                div(:class="{ 'hidden': !showContent }", class="hidden")
+                                    div(class="w-full p-3")
+                                        div(class="px-6 py-8 border border-gray-800 rounded-5xl")
+                                            div(class="flex flex-wrap items-center -m-3 mb-3")
+                                                div(class="w-auto p-3")
+                                                    img(src="template-assets/images/cards/avatar8.png", alt="")
+                                                div(class="w-auto p-3")
+                                                    h2(class="text-2xl text-white") Kevin Roland
+                                                    p(class="text-sm text-gray-300") @kevinroland
+                                            p(class="mb-4 text-white") Responsibility and discipline drive my approach to finances. Regularly monitoring expenses and savings is a routine for me, ensuring a proactive stance to prevent potential financial issues.
+                                            p(class="mb-4 text-white") Managing finances can be stressful.
+                                            div(class="flex flex-wrap items-center -m-2.5 mb-1.5")
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") 5:48 PM
+                                                div(class="w-auto p-2.5")
+                                                    p(class="text-sm text-gray-300") Sep 15, 2023
+                                            div(class="flex flex-wrap items-center -m-2.5")
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                                        path(d="M8.41398 13.8731C8.18732 13.9531 7.81398 13.9531 7.58732 13.8731C5.65398 13.2131 1.33398 10.4597 1.33398 5.79307C1.33398 3.73307 2.99398 2.06641 5.04065 2.06641C6.25398 2.06641 7.32732 2.65307 8.00065 3.55974C8.67398 2.65307 9.75398 2.06641 10.9607 2.06641C13.0073 2.06641 14.6673 3.73307 14.6673 5.79307C14.6673 10.4597 10.3473 13.2131 8.41398 13.8731Z", stroke="#9F9FA0", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 232 like
+                                                div(class="flex flex-wrap items-center w-auto p-2.5")
+                                                    svg(class="mr-2.5", width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                        path(d="M13.247 8.07345C12.8137 10.7001 10.8604 12.7201 8.24702 13.2135C6.81369 13.4868 5.45368 13.2735 4.28035 12.7201C4.08701 12.6268 3.77367 12.5868 3.56701 12.6335C3.12701 12.7401 2.38703 12.9201 1.76037 13.0668C1.16037 13.2135 0.78704 12.8401 0.933706 12.2401L1.36702 10.4401C1.42035 10.2335 1.37368 9.91345 1.28035 9.72012C0.747012 8.60012 0.533693 7.30012 0.753693 5.93345C1.18036 3.30678 3.30037 1.18012 5.92703 0.746784C10.2604 0.0467841 13.9537 3.74012 13.247 8.07345Z", stroke="#9F9FA0", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                    p(class="text-sm text-gray-300") 81 com.
+                div(:class="{ 'hidden': showContent }", class="absolute bottom-0 left-0 z-10 py-32 lg:py-64 flex items-center justify-center w-full bg-gradient-radial-darker3")
+                    a(x-on:click.prevent="showContent = true", class="inline-block px-8 py-4 font-medium tracking-tighter bg-green-400 hover:bg-green-500 text-black focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300", href="#") Show more
+            section(x-data="{ active: 'introduction' }", class="relative py-24 overflow-hidden")
+                div(class="container px-4 mx-auto")
+                    div(class="mb-12 md:max-w-4xl text-center mx-auto")
+                        span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") More about our features
+                        h2(class="font-heading text-7xl lg:text-8xl text-white tracking-tighter-xl") Billing infrastucture that keeps up with your business
+                    ul(class="mb-20 flex flex-wrap justify-center")
+                        li
+                            a(x-on:click.prevent="active = 'introduction'", :class="{'text-green-400 border-green-400': active === 'introduction', 'text-gray-300 border-transparent': active !== 'introduction'}", class="inline-block px-5 py-5 font-medium text-green-300 tracking-tighter border border-green-400 rounded-full transition duration-200", href="#") Introduction
+                        li
+                            a(x-on:click.prevent="active = 'aggregation'", :class="{'text-green-400 border-green-400': active === 'aggregation', 'text-gray-300 border-transparent': active !== 'aggregation'}", class="inline-block px-5 py-5 font-medium text-gray-300 tracking-tighter border border-transparent rounded-full transition duration-200", href="#") Aggregation
+                        li
+                            a(x-on:click.prevent="active = 'pricing'", :class="{'text-green-400 border-green-400': active === 'pricing', 'text-gray-300 border-transparent': active !== 'pricing'}", class="inline-block px-5 py-5 font-medium text-gray-300 tracking-tighter border border-transparent rounded-full transition duration-200", href="#") Pricing & Credits
+                        li
+                            a(x-on:click.prevent="active = 'integrations'", :class="{'text-green-400 border-green-400': active === 'integrations', 'text-gray-300 border-transparent': active !== 'integrations'}", class="inline-block px-5 py-5 font-medium text-gray-300 tracking-tighter border border-transparent rounded-full transition duration-200", href="#") Integrations
+                        li
+                            a(x-on:click.prevent="active = 'api'", :class="{'text-green-400 border-green-400': active === 'api', 'text-gray-300 border-transparent': active !== 'api'}", class="inline-block px-5 py-5 font-medium text-gray-300 tracking-tighter border border-transparent rounded-full transition duration-200", href="#") API & Webhooks
+                    img(:class="{ 'hidden': active != 'introduction' }", class="mx-auto", src="template-assets/images/features/dashboard2.png", alt="")
+                    img(:class="{ 'hidden': active != 'aggregation' }", class="hidden mx-auto", src="template-assets/images/features/dashboard3.png", alt="")
+                    img(:class="{ 'hidden': active != 'pricing' }", class="hidden mx-auto", src="template-assets/images/features/dashboard2.png", alt="")
+                    img(:class="{ 'hidden': active != 'integrations' }", class="hidden mx-auto", src="template-assets/images/features/dashboard3.png", alt="")
+                    img(:class="{ 'hidden': active != 'api' }", class="hidden mx-auto", src="template-assets/images/features/dashboard2.png", alt="")
+            section(class="py-12")
+                div(class="container px-4 mx-auto")
+                    div(class="relative pt-20 px-4 bg-gray-900 bg-opacity-20 overflow-hidden rounded-6xl")
+                        div(class="text-center md:max-w-xl mx-auto removed pb-20")
+                            span(class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter") Learn to code
+                            h2(class="font-heading mb-6 text-7xl text-white tracking-8xl") Want to build templates like this one?
+                            a(class="mb-8 text-gray-300 relative z-10", href="https://www.pixelrocket.store") Visit www.pixelrocket.store and learn to become a frontend web developer today
+                            img(class="absolute -bottom-24 right-0 z-0", src="template-assets/images/application-section/lines2.png", alt="")
+            section(class="bg-gray-50 overflow-hidden")
+                div(class="py-14 bg-black rounded-b-7xl")
+                div(class="py-24")
+                    div(class="container px-4 mx-auto")
+                        div(class="flex flex-wrap justify-center -m-8 mb-28")
+                            div(class="w-full md:w-1/2 lg:w-4/12 p-8")
+                                div(class="md:max-w-xs")
+                                    img(class="mb-7", src="images/logo-dark.svg", alt="")
+                                    p(class="text-gray-400 font-medium") Global Bank is a strategic branding agency focused on brand creation, rebrands, and brand
+                            div(class="w-full md:w-1/2 lg:w-2/12 p-8")
+                                h3(class="mb-6 text-lg text-black font-medium") About
+                                ul
+                                    li(class="mb-2.5")
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Contact
+                                    li(class="mb-2.5")
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Blog
+                                    li(class="mb-2.5")
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Our Story
+                                    li
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Careers
+                            div(class="w-full md:w-1/2 lg:w-2/12 p-8")
+                                h3(class="mb-6 text-lg text-black font-medium") Company
+                                ul
+                                    li(class="mb-2.5")
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Contact
+                                    li(class="mb-2.5")
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Blog
+                                    li(class="mb-2.5")
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Our Story
+                                    li
+                                        a(class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300", href="#") Careers
+                            div(class="w-full md:w-1/2 lg:flex-1 p-8")
+                                div(class="flex flex-wrap -m-2")
+                                    div(class="w-full p-2")
+                                        a(class="block py-5 px-8 bg-white rounded-full", href="#")
+                                            div(class="flex flex-wrap items-center -m-2")
+                                                div(class="w-auto p-2")
+                                                    img(src="template-assets/images/footers/twitter.svg", alt="")
+                                                div(class="flex-1 p-2")
+                                                    p(class="text-black") Follow us on Twitter for updates
+                                    div(class="w-full p-2")
+                                        a(class="block py-5 px-8 bg-white rounded-full", href="#")
+                                            div(class="flex flex-wrap items-center -m-2")
+                                                div(class="w-auto p-2")
+                                                    img(src="template-assets/images/footers/instagram.svg", alt="")
+                                                div(class="flex-1 p-2")
+                                                    p(class="text-black") Follow us on Instagram for updates
+                                    div(class="w-full p-2")
+                                        a(class="block py-5 px-8 bg-white rounded-full", href="#")
+                                            div(class="flex flex-wrap items-center -m-2")
+                                                div(class="w-auto p-2")
+                                                    img(src="template-assets/images/footers/tiktok.svg", alt="")
+                                                div(class="flex-1 p-2")
+                                                    p(class="text-black") Follow us on TikTok for updates
+                        div(class="flex flex-wrap justify-between -m-2")
+                            div(class="w-auto p-2")
+                                p(class="inline-block text-sm font-medium text-black text-opacity-60") © 2023 Global Bank
+                            div(class="w-auto p-2")
+                                div(class="flex flex-wrap items-center -m-2 sm:-m-7")
+                                    div(class="w-auto p-2 sm:p-7")
+                                        a(class="inline-block text-sm text-black text-opacity-60 hover:text-opacity-100 font-medium transition duration-300", href="#") Terms of Use
+                                    div(class="w-auto p-2 sm:p-7")
+                                        a(class="inline-block text-sm text-black text-opacity-60 hover:text-opacity-100 font-medium transition duration-300", href="#") Privacy Policy

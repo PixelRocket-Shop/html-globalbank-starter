@@ -1,0 +1,20 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M12.6083 7.89161L8.39161 12.1083C7.83245 11.5491 7.51831 10.7907 7.51831 9.99994C7.51831 9.60839 7.59543 9.22067 7.74527 8.85892C7.89512 8.49717 8.11474 8.16848 8.39161 7.89161C8.66848 7.61474 8.99717 7.39512 9.35892 7.24527C9.72067 7.09543 10.1084 7.01831 10.4999 7.01831C11.2907 7.01831 12.0491 7.33245 12.6083 7.89161Z" stroke="#595959" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.6083 7.89161L8.39161 12.1083C7.83245 11.5491 7.51831 10.7907 7.51831 9.99994C7.51831 9.60839 7.59543 9.22067 7.74527 8.85892C7.89512 8.49717 8.11474 8.16848 8.39161 7.89161C8.66848 7.61474 8.99717 7.39512 9.35892 7.24527C9.72067 7.09543 10.1084 7.01831 10.4999 7.01831C11.2907 7.01831 12.0491 7.33245 12.6083 7.89161Z" stroke="url(#pattern0)" stroke-opacity="0.07" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.35 4.80828C13.8917 3.70828 12.225 3.10828 10.5 3.10828C7.55832 3.10828 4.81666 4.84161 2.90833 7.84161C2.15833 9.01661 2.15833 10.9916 2.90833 12.1666C3.56666 13.1999 4.33332 14.0916 5.16666 14.8083M7.51666 16.2749C8.46666 16.6749 9.47499 16.8916 10.5 16.8916C13.4417 16.8916 16.1833 15.1583 18.0917 12.1583C18.8417 10.9833 18.8417 9.00828 18.0917 7.83328C17.8167 7.39994 17.5167 6.99161 17.2083 6.60828" stroke="#595959" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.35 4.80828C13.8917 3.70828 12.225 3.10828 10.5 3.10828C7.55832 3.10828 4.81666 4.84161 2.90833 7.84161C2.15833 9.01661 2.15833 10.9916 2.90833 12.1666C3.56666 13.1999 4.33332 14.0916 5.16666 14.8083M7.51666 16.2749C8.46666 16.6749 9.47499 16.8916 10.5 16.8916C13.4417 16.8916 16.1833 15.1583 18.0917 12.1583C18.8417 10.9833 18.8417 9.00828 18.0917 7.83328C17.8167 7.39994 17.5167 6.99161 17.2083 6.60828" stroke="url(#pattern1)" stroke-opacity="0.07" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.425 10.5833C13.3121 11.1646 13.028 11.6989 12.6093 12.1176C12.1906 12.5364 11.6563 12.8204 11.075 12.9333M8.39163 12.1083L2.16663 18.3333M18.8333 1.66663L12.6083 7.89163" stroke="#595959" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.425 10.5833C13.3121 11.1646 13.028 11.6989 12.6093 12.1176C12.1906 12.5364 11.6563 12.8204 11.075 12.9333M8.39163 12.1083L2.16663 18.3333M18.8333 1.66663L12.6083 7.89163" stroke="url(#pattern2)" stroke-opacity="0.07" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_286_1354" transform="matrix(0.0647759 0 0 0.0416667 -0.285717 -0.109622)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_286_1354" transform="matrix(0.0647759 0 0 0.0416667 -0.285717 -0.109622)"/>
+</pattern>
+<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_286_1354" transform="matrix(0.0647759 0 0 0.0416667 -0.285717 -0.109622)"/>
+</pattern>
+<image id="image0_286_1354" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFxJREFUSEvtkksKACAIBRX0/gdWsE2rQMJKCtK9n3EemplBYuH1BaoKRLTMeJ9g+fTe+AHBccm7A0dnHziomL4nORpjlyA6yAuDu0BEgJl3QwTvOYgiFcH0Y+kvaix8cbnzBW4NAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
